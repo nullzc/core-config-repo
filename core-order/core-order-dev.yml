@@ -1,6 +1,6 @@
 server:
   context-path: /
-  port: 8001
+  port: 8001 
 
 #断路器请求超时时间设定
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000 
@@ -191,8 +191,6 @@ druid:
         filters: stat,wall,log4j
         useGlobalDataSourceStat: true    
         
-        
-                
 mybatis:
     type-aliases-package: com.nullzc.order
     mapper-locations: classpath:com/nullzc/order/mapping/*.xml
@@ -200,7 +198,6 @@ mybatis:
 logging:
     level:
         tk.mybatis: TRACE  
-        
         
 pagehelper: 
     helperDialect: mysql
